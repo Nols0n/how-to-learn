@@ -104,10 +104,6 @@
   font-weight: normal;
 }
 
-.description__two-columns__brief {
-  margin-top: 0;
-}
-
 .description__two-columns__main-text {
   width: 80%;
   min-width: 784px;
@@ -143,7 +139,7 @@
 .subtitle {
   position: absolute;
   margin-right: auto;
-  margin-top: 450px; 
+  margin-top: 450px;
   line-height: 51px;
   font-size: 36px;
   text-align: center;
@@ -305,7 +301,7 @@
   height: 877px;
   position: absolute;
   top: 0;
-  right: 0; 
+  right: 0;
   background-size: contain;
 }
 /*я пробовал поставить треугольник на передний фон через ордер но не получилось почему-то*/
