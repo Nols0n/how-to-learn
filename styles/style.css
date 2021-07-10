@@ -1,7 +1,3 @@
-p, h1, h2, h3, h4, h5, h6, a {
-  padding: 0;
-  margin: 0;
-}
 
 .page {
   min-width: 1100px;
@@ -15,7 +11,8 @@ p, h1, h2, h3, h4, h5, h6, a {
   min-height: 600px;
   max-height: 756px;
   position: relative;
-  justify-content: left;
+  justify-content: center;
+  flex-direction: column;
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
@@ -33,8 +30,9 @@ p, h1, h2, h3, h4, h5, h6, a {
 
 
 .logo_place_header {
-  margin-top: 30px;
-  margin-left: 64px;
+  position: absolute;
+  top: 30px;
+  left: 64px;  
   background-image: url(../images/logo_place_header.svg);
   width: 183px;
   height: 32px; 
@@ -61,8 +59,6 @@ p, h1, h2, h3, h4, h5, h6, a {
   padding: 0;
   margin: 0;
   z-index: 3;
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 64px;
   width: 730px;
   font-size: 102px;
@@ -94,6 +90,7 @@ p, h1, h2, h3, h4, h5, h6, a {
 
 .two-columns__brief {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 1.2;
   color: #2f80ed;
@@ -235,9 +232,11 @@ p, h1, h2, h3, h4, h5, h6, a {
 } 
 
 .kaufman {
-  position: relative;
+  overflow: hidden;
+  z-index: -2;
   margin: 0;
   padding: 90px 0;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   background-color: #1f1f1f;
@@ -282,13 +281,13 @@ p, h1, h2, h3, h4, h5, h6, a {
   z-index: 3;
 }
 
-.table_cell_theme_dark {
+.table__cell_theme_dark {
   margin-top: 80px;
   width: 200px;
   z-index: 3;
 }
 
-.table_heading_theme_dark {
+.table__heading_theme_dark {
   margin: 0;
   line-height: 1.15;
   font-size: 24px;
@@ -296,7 +295,7 @@ p, h1, h2, h3, h4, h5, h6, a {
   color: white;
 }
 
-.table_text_theme_dark {
+.table__text_theme_dark {
   margin: 0;
   margin-top: 20px;
   line-height: 1.2;
@@ -306,18 +305,16 @@ p, h1, h2, h3, h4, h5, h6, a {
 }
 
 .kaufman__triangle {
-  z-index: 2;
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
   width: 877px;
   height: 877px;
   position: absolute;
   top: 0;
-  right: 0;
-  background-size: auto;
+  right: -210px;
+  background-size: cover;
+  z-index: -1;
 }
-/*я пробовал поставить треугольник на передний фон через ордер но не получилось почему-то*/
-
 
 .footer {
   min-height: 350px;
@@ -334,7 +331,7 @@ p, h1, h2, h3, h4, h5, h6, a {
   width: 90%;
 }
 
-.footer_column_content_copyright {
+.footer__column_content_copyright {
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
@@ -344,11 +341,12 @@ p, h1, h2, h3, h4, h5, h6, a {
 }
 
 .logo {
-  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo_place_footer {
-  margin: 18px 0;
+  margin: 0;
   background-image: url(../images/logo_place_footer.svg);
   width: 183px;
   height: 35px;
@@ -363,12 +361,16 @@ p, h1, h2, h3, h4, h5, h6, a {
 }
 
 .footer__column_content_info {
+  flex-direction: column;
+  align-items: center;
   width: auto;
   margin: 0;
   padding: 0;
 }
 
-.footer_column_content_social {
+.footer__column_content_social {
+  flex-direction: column;
+  align-items: center;
   width: auto;
   margin: 0;
   padding: 0;
@@ -397,3 +399,4 @@ p, h1, h2, h3, h4, h5, h6, a {
   height: 16px;
   margin-right: 10px;
 }
+
