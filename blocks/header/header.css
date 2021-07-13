@@ -1,0 +1,69 @@
+.header {
+    overflow: hidden;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+  }
+  
+  .header__main-illustration {
+    height: 608px;
+    width: 765px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .logo_place_header {
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    background-image: url(../images/logo_place_header.svg);
+    width: 183px;
+    height: 32px; 
+  }
+  
+  .header__subtitle {
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+    position: absolute;
+    left: 64px;
+    bottom: 30px;
+    width: 388px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .header__link {
+    color: #2f80ed;
+    text-decoration:none;
+  }
+  
+  .header__title {
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+    margin-left: 64px;
+    width: 730px;
+    font-size: 102px;
+    line-height:96px;
+  }
+  
+  .header__square-pic {
+    animation: rotation 20s infinite;
+    width: 568px;
+    height:568px;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background-color: #2f80ed;
+  }
+  

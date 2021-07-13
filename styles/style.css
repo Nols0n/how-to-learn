@@ -24,6 +24,7 @@ a:hover {
   max-width: 1600px;
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  overflow: visible;
 }
 
 .header {
@@ -156,6 +157,7 @@ a:hover {
 }
 
 .cards {
+  overflow: visible;
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -592,3 +594,15 @@ a:hover {
   margin-right: 10px;
 }
 
+
+@import url('../blocks/description/description.css');
+@import url('../blocks/digits/digits.css');
+@import url('../blocks/feynman/feynman.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/kaufman/kaufman.css');
+@import url('../blocks/khan/khan.css');
+@import url('../blocks/oakley/oakley.css');
+@import url('../blocks/resources/resources.css');
+@import url('../blocks/techniques/techniques.css');
+@import url('../blocks/video/video.css');
