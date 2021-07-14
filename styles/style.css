@@ -159,13 +159,10 @@ a:hover {
 }
 
 .cards {
-  overflow: visible;
-  display: inline-block;
-  flex-direction: row;
+  display: inline;
   list-style-type: none;
   width: 920px;
   margin: 0 auto;
-  height: auto;
 }
 
 /*Всё перепробовал, не знаю как переход сделать*/
@@ -174,6 +171,8 @@ a:hover {
   display: inline-flex;
   margin: 60px 0;
   flex-direction: column;
+  align-items: center;
+  width: 300px;
 }
 
 .cards__image {
