@@ -5,3 +5,13 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
     overflow: visible;
 }  
+a {
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: linear;
+  }
+  
+  a:hover {
+    opacity: 0.4;
+  }
+  

@@ -348,12 +348,3 @@ template {
   display: none;
 }
 
-a {
-  transition-property: opacity;
-  transition-duration: 0.6s;
-  transition-timing-function: linear;
-}
-
-a:hover {
-  opacity: 0.4;
-}
