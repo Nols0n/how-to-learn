@@ -1,8 +1,8 @@
-.khan__book-pic {
+.khan__buy-link {
     margin: 0;
     padding: 0;
-    width: 620px;
-    height: 608px;
-    overflow: hidden;
-    object-fit: contain;
-}
+    color: #2f80ed;
+    line-height: 42px;
+    font-size: 30px;
+    margin-left: 48px;
+  }
