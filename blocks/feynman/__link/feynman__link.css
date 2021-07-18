@@ -6,4 +6,11 @@
     text-decoration:none;
     top: 50%;
     right: 48px;
-  }
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: linear;
+}
+
+.feynman__link:hover {
+  opacity: 0.4;
+}
